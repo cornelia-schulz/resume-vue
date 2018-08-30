@@ -1,7 +1,7 @@
 <template>
     <header>
         <b-row>
-            <b-col cols='2' class='img'>
+            <b-col cols='2' offset='1' class='img'>
                 <img class='profile-img' alt="Profile picture" src="../assets/images/profile.png"/>
             </b-col>
             <b-col>

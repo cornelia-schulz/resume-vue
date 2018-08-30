@@ -31,7 +31,7 @@ export default {
       {'title': 'Localisation Blog',
         'year': '2018',
         'description': 'Technologies: React with Gatsby, HTML, CSS, JavaScript. A personal blog about localisation.',
-        'image': '..//assets//images//snake.jpg',
+        'image': '../assets/images/snake.jpg',
         'github': ''
       },
       {'title': 'Photolocations',
