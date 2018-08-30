@@ -3,10 +3,10 @@
         <h2>Projects</h2>
         <b-card no-body>
             <b-tabs card>
-                <b-tab  v-for='(data, index) in projects' :key='index' title='title'>
+                <b-tab  v-for='(data, index) in projects' :key='index' v-bind:title=data.title>
                     <b-row>
                         <b-col>
-                            <img src='' alt=''/>
+                            <img v-bind:src=data.image v-bind:alt=data.title />
                         </b-col>
                         <b-col>
                             {{data.title}}<br/>
@@ -31,7 +31,7 @@ export default {
       {'title': 'Localisation Blog',
         'year': '2018',
         'description': 'Technologies: React with Gatsby, HTML, CSS, JavaScript. A personal blog about localisation.',
-        'image': '../assets/images/snake.jpg',
+        'image': '..//assets//images//snake.jpg',
         'github': ''
       },
       {'title': 'Photolocations',
