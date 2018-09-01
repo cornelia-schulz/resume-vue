@@ -1,9 +1,9 @@
 <template>
     <footer>
-        <p class='footer-top'>Get in touch!</p>
+        <h3 class='footer-top'>Get in touch!</h3>
         <p class='footer-bottom'>
-            Email: firzhugh@gmail.com <br/>
-            Github: cornelia-schulz <br />
+            Email: <a href="mailto:firzhugh@gmail.com">firzhugh@gmail.com</a> <br/>
+            Github: <a href='https://github.com/cornelia-schulz' target='_blank'>cornelia-schulz</a> <br />
             Location: Auckland, NZ
         </p>
     </footer>

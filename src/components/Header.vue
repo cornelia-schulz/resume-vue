@@ -2,15 +2,15 @@
     <header>
         <b-row>
             <b-col cols='2' offset='1' class='img'>
-                <img class='profile-img' alt="Profile picture" src="../assets/images/profile1.png"/>
+                <img class='profile-img' alt='Profile picture' src='../assets/images/profile1.png'/>
             </b-col>
             <b-col class='header-right'>
                 <b-row class='header-text-right'>
                     <h1>Cornelia Schulz <span class='title'>Developer</span></h1>
                 </b-row>
                 <b-row>
-                    <b-col>Email: <a href='#'>firzhugh@gmail.com</a></b-col>
-                    <b-col>Github: <a href='#'>cornelia-schulz</a></b-col>
+                    <b-col>Email: <a href="mailto:firzhugh@gmail.com">firzhugh@gmail.com</a></b-col>
+                    <b-col>Github: <a href='https://github.com/cornelia-schulz' target='_blank'>cornelia-schulz</a></b-col>
                     <b-col>Location: Auckland</b-col>
                 </b-row>
             </b-col>
@@ -38,13 +38,13 @@
 <style>
     header {
         padding-top: 20px;
-        background-color: #0D1321;
+        background-color: #1D2D44;
         padding-bottom: 20px;
     }
     h1 {
         text-align: left;
         margin-left: 12px;
-        color: #fff;
+        color: 748CAB !important;
     }
 
     .title {
