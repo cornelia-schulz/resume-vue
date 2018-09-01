@@ -3,7 +3,7 @@
         <h2>Courses & Certificates</h2>
         <ul>
             <li v-for='(data, index) in courses' :key='index' >
-                {{data.course}} - {{data.school}} <br/>
+                <span class='title'>{{data.course}} - {{data.school}}</span> <br/>
                 {{data.year}}
             </li>
         </ul>
@@ -46,3 +46,30 @@ export default {
   }
 }
 </script>
+
+<style>
+.courses {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #0D1321;
+}
+
+.title {
+  color: #748CAB;
+  font-size: 1.2rem;
+}
+
+.education-text {
+    padding-left: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: block;
+  margin: 0 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+</style>

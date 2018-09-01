@@ -1,9 +1,9 @@
 <template>
     <article class='education'>
         <h2>Education</h2>
-        <b-row>
+        <b-row class='education-text'>
             <b-col>
-                {{school}} - {{title}} <br/>
+                <span class='title'>{{school}} - {{title}}</span> <br/>
                 {{time}}<br/>
                 {{majors}}
             </b-col>
@@ -29,3 +29,20 @@ export default {
   }
 }
 </script>
+
+<style>
+.education {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #0D1321;
+}
+
+.title {
+  color: #748CAB;
+  font-size: 1.2rem;
+}
+
+.education-text {
+    padding-left: 10px;
+}
+</style>

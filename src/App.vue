@@ -20,7 +20,7 @@
   body {
     margin: 0;
     background-color: #F5F7D4;
-    color: #340933;
+    color: #3E5C76;
   }
 
   #app {
@@ -29,9 +29,16 @@
     -moz-osx-font-smoothing: grayscale;
     margin-top: 60px;
     background-color: #F5F7D4;
-    color: #340933;
     width: 90%;
     margin: 0 auto;
   }
+
+  a, a:visited {
+        color: #748CAB !important; 
+    }
+
+    a:hover {
+        color: #3E5C76 !important;
+    }
 
 </style>

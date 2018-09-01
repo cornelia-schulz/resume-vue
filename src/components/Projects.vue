@@ -9,9 +9,9 @@
                             <img v-bind:src=data.image v-bind:alt=data.title />
                         </b-col>
                         <b-col>
-                            {{data.title}}<br/>
-                            {{data.year}}<br/>
-                            {{data.description}}
+                            <h3>{{data.title}}</h3>
+                            <p>{{data.year}}</p>
+                            <p>{{data.description}}</p>
                         </b-col>
                     </b-row>
                    
@@ -69,3 +69,32 @@ export default {
   }
 }
 </script>
+
+<style>
+.projects {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #F0EBD8;
+}
+
+.card {
+  -webkit-box-shadow: 10px 13px 25px -11px rgba(52,9,51,0.74);
+  -moz-box-shadow: 10px 13px 25px -11px rgba(52,9,51,0.74);
+  box-shadow: 10px 13px 25px -11px rgba(52,9,51,0.74);
+}
+
+.card-header {
+  background-color: #0D1321;
+}
+
+.tab-content, .nav-item {
+  background-color: #1D2D44;
+}
+
+.nav-item {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 0;
+}
+
+</style>

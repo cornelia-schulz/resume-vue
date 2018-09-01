@@ -3,7 +3,7 @@
     <h2>Work Experience</h2>
     <ul>
       <li v-for='(data, index) in work' :key='index'>
-        {{data.title}} - {{data.company}} <br/>
+        <span class = 'title'>{{data.title}} - {{data.company}}</span> <br/>
         {{data.time}}<br/>
         {{data.description}}
       </li>
@@ -49,6 +49,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.workexperience {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #0D1321;
+}
+
+.title {
+  color: #748CAB;
+  font-size: 1.2rem;
+}
+
 h3 {
   margin: 40px 0 0;
 }
@@ -59,6 +70,8 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 a {
   color: #42b983;
