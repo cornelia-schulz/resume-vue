@@ -6,7 +6,7 @@
                 <b-tab  v-for='(data, index) in projects' :key='index' v-bind:title=data.title>
                     <b-row>
                         <b-col>
-                            <img v-bind:src="data.image"  v-bind:alt=data.title />
+                            <img class='project-img' v-bind:alt=data.title :src="getImgUrl(data.image)" />
                         </b-col>
                         <b-col>
                             <h3>{{data.title}}</h3>
@@ -28,44 +28,51 @@ export default {
   name: 'Projects',
   data() {
     return{
+      baseUrl: process.env.BASE_URL,
     projects: [
       {'title': 'Lost in Translation',
         'year': '2018',
         'description': 'Technologies: React with Gatsby, HTML, CSS, JavaScript. A personal blog about localisation.',
-        'image': '../assets/images/snake.jpg',
+        'image': 'lost-in-translation',
         'github': 'https://github.com/cornelia-schulz/lost-in-translation'
       },
       {'title': 'Photolocations',
         'year': '2018',
         'description': 'Technologies: React, Redux, Express, Knex, Node, HTML, CSS, JavaScript. A personal project to find perfect photography locations.',
-        'image': '../assets/images/snake.jpg',
+        'image': 'photolocations',
         'github': 'https://github.com/cornelia-schulz/photolocations'
       },
       {'title': 'Snake',
         'year': '2018',
         'description': 'Technologies: HTML, CSS, JavaScript. My version of the popular game Snake.',
-        'image': '../assets/images/snake.jpg',
+        'image': 'snake',
         'github': 'https://github.com/cornelia-schulz/snake'
       },
       {'title': 'Minesweeper',
         'year': '2018',
         'description': 'Technologies: HTML, CSS, JavaScript. This is an Auckland version of the popular game Minesweeper.',
-        'image': '../assets/images/minesweeper.png',
+        'image': 'minesweeper',
         'github': 'https://github.com/cornelia-schulz/minesweeper'
       },
       {'title': 'Photography Website',
         'year': '2014-2018',
         'description': 'Technologies: HTML, CSS, JavaScript, jQuery, PHP. This is my own personal photography website. The aim was to exhibit my photographs in various categories which each come with a lightbox to enlarge the images.',
-        'image': '../assets/images/cornelia-schulz-photography.png',
+        'image': 'cornelia-schulz-photography',
         'github': 'https://github.com/cornelia-schulz/cornelia-schulz-photography'
       },
       {'title': 'Frogger',
         'year': '2014',
         'description': 'Technologies: HTML, CSS, JavaScript, jQuery, Canvas, OOP. This is my version of the classic arcade game Frogger. Collect jewels and keys to get through the gates to hamster as many points as you can.',
-        'image': '../assets/images/frogger.png',
+        'image': 'frogger',
         'github': 'https://github.com/cornelia-schulz/frogger'
       },
     ]
+    }
+  },
+  methods: {
+    getImgUrl(img) {
+      var images = require.context('../assets/images', false, /\.png$/)
+      return images('./' + img + ".png")
     }
   }
 }
@@ -99,8 +106,15 @@ export default {
 }
 
 .nav-tabs .nav-link.active {
-  background-color: #F0EBD8 !important;
+  background-color: #748CAB !important;
+  color: #0D1321 !important;
 }
 
+.project-img {
+  width: 100%;
+  -webkit-box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
+  -moz-box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
+  box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
+}
 
 </style>

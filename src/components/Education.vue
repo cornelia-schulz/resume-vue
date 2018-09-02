@@ -3,7 +3,7 @@
         <h2>Education</h2>
         <b-row class='education-text'>
             <b-col>
-                <span class='title'>{{school}} - {{title}}</span> <br/>
+                <span class='title'>{{school}}</span> <br/>
                 {{time}}<br/>
                 {{majors}}
             </b-col>
@@ -21,7 +21,6 @@ export default {
     return{
  
       school: 'Martin-Luther-University',
-        title: 'Masters',
         time: '1996 - 2001',
         location: 'Halle (Saale), Germany',
         majors: 'Majors: Japanese Studies, Hispanic Studies'
