@@ -75,17 +75,17 @@ export default {
 .projects {
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #F0EBD8;
 }
 
 .card {
   -webkit-box-shadow: 10px 13px 25px -11px rgba(52,9,51,0.74);
   -moz-box-shadow: 10px 13px 25px -11px rgba(52,9,51,0.74);
   box-shadow: 10px 13px 25px -11px rgba(52,9,51,0.74);
+  color: #F0EBD8;
 }
 
 .card-header {
-  background-color: #0D1321;
+  background-color: #0D1321 !important;
 }
 
 .tab-content, .nav-item {
@@ -97,5 +97,10 @@ export default {
   border-top-left-radius: 5px;
   padding: 0;
 }
+
+.nav-tabs .nav-link.active {
+  background-color: #F0EBD8 !important;
+}
+
 
 </style>

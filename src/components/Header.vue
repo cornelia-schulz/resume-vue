@@ -6,7 +6,7 @@
             </b-col>
             <b-col class='header-right'>
                 <b-row class='header-text-right'>
-                    <h1>Cornelia Schulz <span class='title'>Developer</span></h1>
+                    <h1>Cornelia Schulz <span class='header-title'>Developer</span></h1>
                 </b-row>
                 <b-row>
                     <b-col>Email: <a href="mailto:firzhugh@gmail.com">firzhugh@gmail.com</a></b-col>
@@ -40,6 +40,7 @@
         padding-top: 20px;
         background-color: #1D2D44;
         padding-bottom: 20px;
+        color: #F0EBD8;
     }
     h1 {
         text-align: left;
@@ -47,8 +48,9 @@
         color: 748CAB !important;
     }
 
-    .title {
+    .header-title {
         font-size: 1rem;
+        color: #F0EBD8;
     }
 
     .img {
