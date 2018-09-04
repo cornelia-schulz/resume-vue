@@ -1,14 +1,17 @@
-const express = require('express-vue')
+const express = require('express')
 const path = require('path')
 const serveStatic = require('serve-static')
-const server = express()
-const expressVueMiddleware = express.init
-server.use(expressVueMiddleware)
 
-server.use(serveStatic(path.join(__dirname + "/dist")))
-// server.use(express.static(path.join(__dirname, './public')))
+const app = express()
+
+
+// const expressVueMiddleware = express.init
+// app.use(expressVueMiddleware)
+
+app.use(serveStatic(path.join(__dirname + "src/dist")))
+// app.use(express.static(path.join(__dirname, './public')))
 const port = process.env.PORT || 5000
-server.listen(port)
+app.listen(port)
 // eslint-disable-next-line no-console
 console.log('Listening on port '+ port)
 
