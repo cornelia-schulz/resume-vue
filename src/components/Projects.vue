@@ -129,6 +129,14 @@ export default {
     margin: 0 auto;
     margin-top: 10px;
   }
+  .nav-link {
+    padding: 11px;
+    margin: 0;
+  }
+  .nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
 </style>
