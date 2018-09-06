@@ -117,7 +117,7 @@ export default {
   box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .project-tab {
     padding: 2px;
   }
