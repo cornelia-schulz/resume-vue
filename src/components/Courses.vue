@@ -21,7 +21,7 @@ export default {
         'school': 'Enspiral Dev Academy',
         'year': '2018'
       },
-      {'course': 'ITIL FOundation',
+      {'course': 'ITIL Foundation',
         'school': 'Axelos',
         'year': '2017'
       },
