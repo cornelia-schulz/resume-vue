@@ -59,11 +59,11 @@
 
     .profile-img {
         text-align: center;
-        -webkit-box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
+        /* -webkit-box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
         -moz-box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
-        box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
+        box-shadow: 18px 18px 16px -15px rgba(116,140,171,1); */
         max-height: 150px;
-
+        border-radius: 50%;
     }
 
     .header-right {
