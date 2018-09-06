@@ -3,8 +3,8 @@ module.exports = {
      sourceMap: true,
   },
   baseUrl: '/',
-  outputDir: 'src/dist',
-  lintOnSave: false,
+  outputDir: 'dist',
+  lintOnSave: true,
   pages: {
       index: {
         entry: 'src/main.js',
