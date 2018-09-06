@@ -89,6 +89,7 @@ h1 {
   .header-right {
     margin-top: 0;
     padding-left: 30px;
+    padding-right: 40px;
   }
   #info-row {
     display: block;
