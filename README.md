@@ -1,21 +1,4 @@
-# resume
+# Cornelia Schulz Resume
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+This is my one-page resume built to practise Vue.js. View it at https://cornelia-schulz-resume.herokuapp.com 
