@@ -2,13 +2,13 @@
     <article class='projects'>
         <h2>Projects</h2>
         <b-card no-body>
-            <b-tabs card>
-                <b-tab  v-for='(data, index) in projects' :key='index' v-bind:title=data.title>
-                    <b-row>
-                        <b-col>
+            <b-tabs card >
+                <b-tab class='project-tab'  v-for='(data, index) in projects' :key='index' v-bind:title=index+1>
+                    <b-row id='project-row'>
+                        <b-col class='project-pane'>
                             <img class='project-img' v-bind:alt=data.title :src="getImgUrl(data.image)" />
                         </b-col>
-                        <b-col>
+                        <b-col class='project-pane'>
                             <h3>{{data.title}}</h3>
                             <p>{{data.year}}</p>
                             <p>{{data.description}}</p>
@@ -115,6 +115,20 @@ export default {
   -webkit-box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
   -moz-box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
   box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
+}
+
+@media only screen and (max-width: 400px) {
+  .project-tab {
+    padding: 2px;
+  }
+  #project-row {
+    display: block;
+  }
+  .project-pane {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
 }
 
 </style>
