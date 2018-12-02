@@ -6,7 +6,7 @@
             </b-col>
             <b-col class='header-right'>
                 <b-row class='header-text-right'>
-                    <h1>Cornelia Schulz <span class='header-title'>Developer</span></h1>
+                  <img class='logo' alt='Cornelia Schulz Web Developer logo' src='../assets/images/CS_web_developer_transparent-yellow.png' />
                 </b-row>
                 <b-row id='info-row'>
                     <b-col class='info'>Email: <a href="mailto:firzhugh@gmail.com">firzhugh@gmail.com</a></b-col>
@@ -46,6 +46,12 @@ h1 {
   text-align: left;
   margin-left: 12px;
   color: 748cab !important;
+}
+
+.logo {
+  height: 110px;
+  margin-top: -60px;
+  margin-left: -15px;
 }
 
 .header-title {
