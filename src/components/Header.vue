@@ -41,6 +41,8 @@ header {
   background-color: #1d2d44;
   padding-bottom: 20px;
   color: #f0ebd8;
+  border-bottom-right-radius: 174px;
+  border-bottom-left-radius: 117px;
 }
 h1 {
   text-align: left;

@@ -19,8 +19,8 @@
 <style>
   body {
     margin: 0;
-    background-color: #F5F7D4;
     color: #3E5C76;
+    background: url(https://i.imgur.com/MJAkxbh.png);
   }
 
   #app {
@@ -28,8 +28,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin-top: 60px;
-    background-color: #F5F7D4;
-    width: 90%;
     margin: 0 auto;
   }
 

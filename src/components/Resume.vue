@@ -2,7 +2,7 @@
   <div id="resume">
     <Header />
     <div class="container">
-        <work-experience msg="Welcome to Your Vue.js App"/>
+        <work-experience />
         <projects />
         <education />
         <courses />

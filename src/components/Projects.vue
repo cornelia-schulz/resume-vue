@@ -84,19 +84,29 @@ export default {
   padding-bottom: 20px;
 }
 
-.card {
-  -webkit-box-shadow: 10px 13px 25px -11px rgba(52,9,51,0.74);
-  -moz-box-shadow: 10px 13px 25px -11px rgba(52,9,51,0.74);
-  box-shadow: 10px 13px 25px -11px rgba(52,9,51,0.74);
+.projects .card {
+  border: none;
   color: #F0EBD8;
+  background: transparent;
 }
 
 .card-header {
   background-color: #0D1321 !important;
 }
 
-.tab-content, .nav-item {
+.projects .card-header:first-child {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 38px;
+}
+
+.nav-item {
   background-color: #1D2D44;
+}
+
+.tab-content {
+  background-color: #1D2D44;
+  border-bottom-right-radius: 177px;
+  border-bottom-left-radius: 18px;
 }
 
 .nav-item {
@@ -112,9 +122,6 @@ export default {
 
 .project-img {
   width: 100%;
-  -webkit-box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
-  -moz-box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
-  box-shadow: 18px 18px 16px -15px rgba(116,140,171,1);
 }
 
 @media only screen and (max-width: 600px) {

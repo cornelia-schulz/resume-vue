@@ -5,7 +5,7 @@
             Email: <a href='mailto:firzhugh@gmail.com'>firzhugh@gmail.com</a> <br/>
             Github: <a href='https://github.com/cornelia-schulz' target='_blank'>cornelia-schulz</a> <br/>
             LinkedIn: <a href='https://www.linkedin.com/in/cornelia-schulz-7746244/' target='_blank'>cornelia-schulz</a><br/>
-            Location: Auckland, NZ
+            Location: Sydney, AU
         </p>
     </footer>
 </template>
