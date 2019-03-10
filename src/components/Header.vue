@@ -44,7 +44,6 @@ header {
   padding-top: 20px;
   border-bottom-right-radius: 174px;
   border-bottom-left-radius: 117px;
-  padding-top: 0;
 }
 
 header .header-content {
@@ -87,7 +86,7 @@ h1 {
 @media only screen and (max-width: 920px) {
   header {
     border-bottom-left-radius: 17px;
-    padding-top: 3rem;
+    padding-top: 3.5rem;
     padding-left: 1.5rem;
   }
   .img {
