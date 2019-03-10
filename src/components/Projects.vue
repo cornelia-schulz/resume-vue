@@ -3,7 +3,7 @@
         <h2>Projects</h2>
         <b-card no-body>
             <b-tabs card >
-                <b-tab class='project-tab'  v-for='(data, index) in projects' :key='index' v-bind:title=index+1>
+                <b-tab class='project-tab'  v-for='(data, index) in projects' :key='index' v-bind:title="(index + 1).toString()">
                     <b-row id='project-row'>
                         <b-col class='project-pane'>
                             <img class='project-img' v-bind:alt=data.title :src="getImgUrl(data.image)" />
@@ -15,7 +15,6 @@
                             <p><a v-bind:href='data.github' target='_blank'>Click here to look at the {{data.title}} Github repository</a></p>
                         </b-col>
                     </b-row>
-                   
                 </b-tab>
             </b-tabs>
         </b-card>
@@ -28,7 +27,7 @@ export default {
   name: 'Projects',
   data() {
     return{
-      baseUrl: process.env.BASE_URL,
+      baseUrl: process.env.PUBLIC_PATH,
     projects: [
       {'title': 'Lost in Translation',
         'year': '2018',
@@ -105,7 +104,7 @@ export default {
 
 .tab-content {
   background-color: #1D2D44;
-  border-bottom-right-radius: 177px;
+  border-bottom-right-radius: 110px;
   border-bottom-left-radius: 18px;
 }
 
@@ -122,6 +121,7 @@ export default {
 
 .project-img {
   width: 100%;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 600px) {

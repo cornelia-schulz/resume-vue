@@ -1,6 +1,6 @@
 <template>
     <header>
-        <b-row>
+        <b-row class="header-content">
             <b-col cols='2' offset='1' class='img'>
                 <img class='profile-img' alt='Profile picture' src='../assets/images/profile1.png'/>
             </b-col>
@@ -11,7 +11,7 @@
                 <b-row id='info-row'>
                     <b-col class='info'>Email: <a href="mailto:firzhugh@gmail.com">firzhugh@gmail.com</a></b-col>
                     <b-col class='info'>Github: <a href='https://github.com/cornelia-schulz' target='_blank'>cornelia-schulz</a></b-col>
-                    <b-col class='info'>Location: Auckland</b-col>
+                    <b-col class='info'>Location: Sydney</b-col>
                 </b-row>
             </b-col>
         </b-row>
@@ -37,13 +37,21 @@ export default {
 
 <style>
 header {
-  padding-top: 20px;
+  width: 100%;
   background-color: #1d2d44;
   padding-bottom: 20px;
   color: #f0ebd8;
+  padding-top: 20px;
   border-bottom-right-radius: 174px;
   border-bottom-left-radius: 117px;
+  padding-top: 0;
 }
+
+header .header-content {
+  margin: 0 auto;
+  max-width: 1408px;
+}
+
 h1 {
   text-align: left;
   margin-left: 12px;
@@ -77,6 +85,11 @@ h1 {
 }
 
 @media only screen and (max-width: 920px) {
+  header {
+    border-bottom-left-radius: 17px;
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+  }
   .img {
     display: none;
   }
@@ -87,15 +100,11 @@ h1 {
 }
 
 @media only screen and (max-width: 759px) {
-  .img {
-    display: none;
-  }
   .info {
     display: block;
     width: 100%;
   }
   .header-right {
-    margin-top: 0;
     padding-left: 30px;
     padding-right: 40px;
   }

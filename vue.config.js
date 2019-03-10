@@ -3,6 +3,7 @@ module.exports = {
      sourceMap: true,
   },
   baseUrl: '/',
+  publicPath: '/',
   outputDir: 'dist',
   lintOnSave: true,
   pages: {
