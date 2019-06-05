@@ -33,37 +33,43 @@ export default {
         'year': '2018',
         'description': 'Technologies: React with Gatsby, HTML, CSS, JavaScript. A personal blog about localisation.',
         'image': 'lost-in-translation',
-        'github': 'https://github.com/cornelia-schulz/lost-in-translation'
+        'github': 'https://github.com/cornelia-schulz/lost-in-translation',
+        'website': '' 
       },
       {'title': 'Photolocations',
         'year': '2018',
         'description': 'Technologies: React, Redux, Express, Knex, Node, HTML, CSS, JavaScript. A personal project to find perfect photography locations.',
         'image': 'photolocations',
-        'github': 'https://github.com/cornelia-schulz/photolocations'
+        'github': 'https://github.com/cornelia-schulz/photolocations',
+        'website': ''
       },
       {'title': 'Snake',
         'year': '2018',
         'description': 'Technologies: HTML, CSS, JavaScript. My version of the popular game Snake.',
         'image': 'snake',
-        'github': 'https://github.com/cornelia-schulz/snake'
+        'github': 'https://github.com/cornelia-schulz/snake',
+        'website': 'https://cornelia-schulz.github.io/snake/'
       },
       {'title': 'Minesweeper',
         'year': '2018',
         'description': 'Technologies: HTML, CSS, JavaScript. This is an Auckland version of the popular game Minesweeper.',
         'image': 'minesweeper',
-        'github': 'https://github.com/cornelia-schulz/minesweeper'
+        'github': 'https://github.com/cornelia-schulz/minesweeper',
+        'website': 'https://cornelia-schulz.github.io/minesweeper/'
       },
       {'title': 'Photography Website',
         'year': '2014-2018',
         'description': 'Technologies: HTML, CSS, JavaScript, jQuery, PHP. This is my own personal photography website. The aim was to exhibit my photographs in various categories which each come with a lightbox to enlarge the images.',
         'image': 'cornelia-schulz-photography',
-        'github': 'https://github.com/cornelia-schulz/cornelia-schulz-photography'
+        'github': 'https://github.com/cornelia-schulz/cornelia-schulz-photography',
+        'website': ''
       },
       {'title': 'Frogger',
         'year': '2014',
         'description': 'Technologies: HTML, CSS, JavaScript, jQuery, Canvas, OOP. This is my version of the classic arcade game Frogger. Collect jewels and keys to get through the gates to hamster as many points as you can.',
         'image': 'frogger',
-        'github': 'https://github.com/cornelia-schulz/frogger'
+        'github': 'https://github.com/cornelia-schulz/frogger',
+        'website': ''
       },
     ]
     }
